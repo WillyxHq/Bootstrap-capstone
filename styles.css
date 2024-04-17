@@ -1,0 +1,28 @@
+@media(max-width:992px){
+    .footer-div,
+    .subscr,
+    .underg{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .underg div{
+        width: 100%;
+    }
+    .subscr input{
+        height: 36px;
+    }
+    .footer-div div{
+
+    }
+}
+
+@media(max-width:250px){
+    .subscr input{
+        width: 5rem !important;
+    }
+    .subscr button{
+        width: 6rem !important;
+        font-size: 1rem !important;
+    }
+}
