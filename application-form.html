@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continue Registration</title>
+</head>
+
+<link rel="shortcut icon" href="./assets/download.png" type="image/x-icon"></link>
+<link rel="stylesheet" href="styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+<style>
+      /* Universal Style Selector */
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .dropdown:hover>.dropdown-menu {
+    display: block;
+    background-color: rgb(150, 222, 167);
+  }
+  ul li::marker{
+      font-size: 150%;
+    color: #07294D;
+  }
+  ul li::selection{
+      background-color: #07294D;
+      color: blue;
+  }
+  .subscr input::placeholder{
+      color: #c1c4c8;
+      font-style: italic;
+      font-weight: 600;
+  }
+  .subscr input{
+      border: none;
+      outline: none;
+      width: 8rem;
+  }
+  
+  .dropdown:hover{
+    /* text-decoration: underline solid red 4px; */
+    /* border-bottom: 6px solid red; */
+
+  }
+  a:hover{
+    /* text-decoration: underline solid red 4px; */
+    cursor: pointer;
+    border-bottom: 6px solid red;
+  }
+  .want-write-ups button:hover,
+  .who-sect button:hover{
+      background-color: #07294D;
+      color: white;
+      font-weight: 700;
+      transition: ease-in-out;
+  }
+  
+  .application-btn:hover{
+      background-color: white !important;
+      color: #07294D !important;
+  }
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  .prospective-student img{
+      width: 100%;
+      height: 100%;
+  }
+  .prospective-student{
+      /* border: 2px solid green;  */
+      width: 100%;
+      height: 70px;
+  }
+  .header-logo-none img{
+        width: 3rem
+}
+.header-p-none{
+    width: 90%;
+}
+
+.welcome-willyx{
+    writing-mode: vertical-rl;
+    position: absolute;
+    left: 0;
+    top: 4.3rem;
+    font-weight: bolder;
+    color: rgb(126, 140, 229);
+}
+  </style>
+<body>
+
+    <main>
+        <!-- Top NavBar -->
+        <nav class="d-none d-lg-block" style="background-color: #07294D;">
+                <div class="navbar navbar-expand-lg">
+                    <div class="border-bottom" style="width: 100%;">
+                        <div class="d-flex  justify-content-center align-items-center mx-auto" style="width: 90%;">
+                            <div class="" style="width: 35%;">
+                                <a class="navbar-brand text-light" style="font-size: smaller;" href="#"><span class="bi bi-envelope px-2"></span>info@wu.org.ng</a>
+                                <a class="navbar-brand text-light" style="font-size: smaller;" href="#"><span class="bi bi-telephone px-2"></span>+234 901 0000 901</a>
+                            </div>
+                            <div class="collapse navbar-collapse  d-flex justify-content-end" id="navbarNavAltMarkup" style="width: 65%;">
+                                <div class="navbar-nav fw-semibold">
+                                    <a class="nav-link active text-light" aria-current="page" href="#" style="font-size: small
+                                    ;">CAMPUS</a>
+                                    <a class="nav-link text-light" href="#" style="font-size: small
+                                    ;"> PARENTS PORTAL</a>
+                                    <a class="nav-link text-light" href="#" style="font-size: small
+                                    ;"> PAY FEES</a>
+                                    <a class="nav-link text-light" href="#" style="font-size: small
+                                    ;"> ORDER UNIFORM</a>
+                                    <a class="nav-link text-light " href="application-form.html" style="font-size: small
+                                    ;">  ONLINE APPLICATION</a>
+                                    <button type="button" style="font-size: 0.85rem
+                                    ;" class="btn rounded-0 fw-bold btn-success mx-2">DWC scholarship fund</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+
+        <!-- second nav section -->
+        <div class="sticky-top" style="width: 100%; background-color: #07294D;">
+            <nav class="navbar navbar-expand-lg mx-auto " style="width: 90%;">
+                <a class="navbar-brand" href="#"><img width="70rem" src="./assets/download.png" alt="lOGO"/> </a>
+                <button class="navbar-toggler border-0 shadow-none bg-success rounded-0" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto d-flex flex-wrap">
+                        <a class="nav-link text-secondary fw-semibold fs-5 " aria-current="page" href="index.html">Home</a>
+                
+                
+                            <!-- my nav link dropdown -->
+                            <div class="dropdown">
+                                <a class=" text-secondary text-decoration-none fw-semibold fs-5 mt-2 mx-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About WU
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light">
+                                <li><a class="dropdown-item" href="#">Establishment</a></li>
+                                <li><a class="dropdown-item" href="#">Staffs</a></li>
+                                <li><a class="dropdown-item" href="#">Students</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Community</a></li>
+                                <div class="dropdown">
+                                    <a class=" text-dark text-decoration-none fs-6 mt-2 mx-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    History of WU
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-primary bg-success border border-1 border-danger " >
+                                    <li><a class="dropdown-item" href="#">Inception</a></li>
+                                    <li><a class="dropdown-item" href="#">Remarks</a></li>
+                                    <li><a class="dropdown-item" href="#">Success Story</a></li>
+                                    </ul>
+                                </div>
+                                </ul>
+                            </div>
+                            <!-- my nav link dropdown -->
+                            <div class="dropdown">
+                                <a class=" text-secondary border-0 mx-3 fw-semibold fs-5 mt-2 text-decoration-none  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Academics
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light">
+                                <li><a class="dropdown-item" href="#">E-Library</a></li>
+                                <li><a class="dropdown-item" href="#">Study Curriculum</a></li>
+                                <li><a class="dropdown-item" href="#">Classroom</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Campus</a></li>
+                                </ul>
+                            </div>
+                            <!-- my nav link dropdown -->
+                            <div class="dropdown">
+                                <a class=" text-secondary border-0 fw-semibold fs-5 mt-2 text-decoration-none  mx-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pastoral
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light">
+                                <li><a class="dropdown-item" href="#">Chaplainery</a></li>
+                                <li><a class="dropdown-item" href="#">Worships</a></li>
+                                <li><a class="dropdown-item" href="#">Menger</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Monastry</a></li>
+                                </ul>
+                            </div>
+                            <!-- my nav link dropdown -->
+                             <div class="dropdown">
+                                <a class=" text-secondary border-0 fw-semibold fs-5 mt-2 text-decoration-none  mx-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Admissions
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light">
+                                <li><a class="dropdown-item" href="application-form.html">Fill Application Forms</a></li>
+                                <li><a class="dropdown-item" href="#">Check UTME Results</a></li>
+                                <li><a class="dropdown-item" href="#">Purchase Admission Status Card</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Continue Registration</a></li>
+                                </ul>
+                            </div>
+                            <!-- my nav link dropdown -->
+                             <div class="dropdown">
+                                <a class=" text-secondary border-0 fw-semibold fs-5 mt-2 text-decoration-none  mx-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                TETFUND Assesments
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light">
+                                <li><a class="dropdown-item" href="#">Projects</a></li>
+                                <li><a class="dropdown-item" href="#">Allocations</a></li>
+                                <li><a class="dropdown-item" href="#">Progress</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Presidency</a></li>
+                                </ul>
+                            </div>
+                             <!-- my nav link dropdown -->
+                            <div class="dropdown">
+                                <a class=" text-secondary border-0 fw-semibold fs-5 mt-2 text-decoration-none mx-1 dropdown-toggle"type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Information
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light">
+                                <li><a class="dropdown-item " href="#">News Room</a></li>
+                                <li><a class="dropdown-item" href="#">Press Releases</a></li>
+                                <li><a class="dropdown-item" href="#">ICT feedback</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">E-Learning</a></li>
+                                </ul>
+                            </div>
+                            <a class="nav-link fw-semibold fs-5  text-secondary pb-1" href="#">Contact</a>
+                        </div>
+                </div>
+            </nav>
+        </div>
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="navbar-nav">
+                    <a class="nav-link text-secondary fw-semibold fs-5 " aria-current="page" href="#">Home</a>
+
+                    <!-- my nav link dropdown -->
+                    <div class="dropdown">
+                        <a class="text-decoration-none fw-semibold fs-5 mt-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About DWC
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item active" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <!-- my nav link dropdown -->
+                    <div class="dropdown">
+                        <a class=" text-secondary border-0 fw-semibold fs-5 mt-2 text-decoration-none  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Academics
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item active" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                        <!-- my nav link dropdown -->
+                    <div class="dropdown">
+                        <a class=" text-secondary border-0 fw-semibold fs-5 mt-2 text-decoration-none   dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pastoral
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item active" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                        <!-- my nav link dropdown -->
+                        <div class="dropdown">
+                        <a class=" text-secondary border-0 fw-semibold fs-5 mt-2 text-decoration-none   dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Admissions
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item active" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                        <!-- my nav link dropdown -->
+                        <div class="dropdown">
+                        <a class=" text-secondary border-0 fw-semibold fs-5 mt-2 text-decoration-none  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Enrichment
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item active" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                        <!-- my nav link dropdown -->
+                        <div class="dropdown">
+                        <a class=" text-secondary border-0 fw-semibold fs-5 mt-2 text-decoration-none  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Information
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item active" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-link fw-semibold fs-5  text-secondary pb-1" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <main class="mt-5">
+        <div class="row mx-auto" style="width: 70%;">
+            <div class="col-lg-8  shadow p-3 bg-body rounded">
+                <p class="border-bottom  text-center " style="border-width: 3px !important; border: green; width: 10rem;">Invoice Generation</p>
+                <div class="row mx-auto" style="width: 100%;">
+                    <div class="col">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <p style="border: 1px solid green; width: 100%;"></p>
+                        <P class="" style="border: 2px solid green; width: 5rem; position: relative; z-index: 1; bottom: 1rem;"></P>
+
+                        <form action="" class="d-flex flex-column justify-content-center mb-3" style="width: 100%; position: relative; z-index: 1; bottom: 1rem;">
+                            <label for="programmes">PROGRAMME</label>
+                            <select name="programmes" id="">
+                                <option value="select_programme" selected>--Select Programme--</option>
+                                <option value="ice">ICE Weekend Degree</option>
+                                <option value="remedial">Remedial Studies</option>
+                                <option value="jupeb">JUPEB</option>
+                                <option value="Undergraduate">Undergraduate Regular</option>
+                            </select>
+
+                            <label for="courses">COURSE</label>
+                            <select name="courses" id="" style="width: 50%;">
+                                <option value="select" selected>--Select--</option>
+                                <option value="accounting">Accountancy</option>
+                                <option value="African">African Literacture</option>
+                                <option value="Applied">Applied Linguistics</option>
+                                <option value="Banking">Banking and Finance</option>
+                                <option value="Business"> Business Education</option>
+                                <option value="Carribean">Carribean Literature</option>
+                                <option value="Church"> Church Interpreting</option>
+                                <option value="Court">Court Interpreting</option>
+                                <option value="Economics">Economics</option>
+                            </select>
+                        </form>
+                        <p style="border: 1px solid green; width: 100%;"></p>
+                        <P class="" style="border: 2px solid green; width: 5rem; position: relative; z-index: 1; bottom: 1rem;"></P>
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;" class="gap-2">
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column">
+                            <label for="surname">SURNAME</label>
+                            <input type="text">
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text">
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column">
+                            <label for="other-name">OTHER NAME</label>
+                            <input type="text">
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column">
+                            <label for="state">STATE</label>
+                            <select name="" id="">
+                                <option value="select" selected>--Select--</option>
+                                <option value="abia">Abia</option>
+                                <option value="adamawa">Adamawa</option>
+                                <option value="akwaibom">Akwaibom</option>
+                                <option value="anambra">Anambra</option>
+                                <option value="bauchi">Bauchi</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column">
+                            <label for="phone">MOBILE NUMBER</label>
+                            <input type="number">
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column">
+                            <label for="email">EMAIL</label>
+                            <input type="email">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-3"><button type="submit" class="btn btn-success text-light rounded-0">Generate invoice</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-md-none d-sm-none d-none d-lg-block text-light shadow p-3 rounded-0" style="background-color: #07294D; background-image: url(/school-img/background\ img1.jpg); background-position: center; background-size: contain; background-repeat: no-repeat; background-blend-mode: overlay; background-color: #07294D; opacity: 0.9; position: relative;">
+                
+                <div class="header-logo-none mt-5 text-center d-flex justify-content-center gap-5">
+                    <img class="col-lg-4" src="./assets/download.png" alt="" >
+                    <div class="col-lg-7">Application Form Invoice</div>
+                </div>
+                <div class="header-p-none mt-3 mx-auto">
+                    <p>
+                        You are on your way to becoming an undergraduate at our Great University
+                    </p>
+                    <h1 class="fs-5 welcome-willyx text-justify">
+                        Welcome to Willyx University
+                    </h1>
+                    <div class="d-flex justify-content-center align-items-center"><button class="btn btn-success text-light rounded-0">Get Started</button></div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>   
+    
+
+
+
+
+
+
+      
+  
+
+
+
+    <footer class="container-fluid" style="background-color: #07294D;">
+        <div class="row mt-5 footer-div mx-auto d-flex justify-content-between flex-wrap  text-light">
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12 d-flex mt-2 flex-column">
+                <h1>
+                    WU
+                </h1>
+                <p>
+                    A108 Adam Street NY 535022, USA
+                </p>
+                <p>Phone: +1 5589 55488 55</p>
+                <p class="f-6">Email: info@example.com</p>
+                <div>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-skype"></i>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12 mt-3">
+                <h1>
+                    Useful Links
+                </h1>
+                <p>> Home </p>
+                <p>> About us </p>
+                <p>> Services </p>
+                <p>> Terms of service </p>
+                <p>> Privacy policy </p>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12 mt-2">
+                <h1>
+                    ICT
+                </h1>
+                <p>> Web Design</p>
+                <p>> Web Developent</p>
+                <p>> Product Management</p>
+                <p>> Marketing</p>
+                <p>> Digital Design</p>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12 mt-2">
+                <h1>
+                    Our Newsletter
+                </h1>
+                <p>
+                    Tamen quem nulla quae legam multos aute sint culpa legam noster magna
+                </p>
+                <form class="d-flex subscr">
+                    <input type="text" placeholder="Enter Email">
+                    <button class="btn rounded-0 bg-success" style="background-color: green !important; color: white; font-weight: 700;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    
+
+
+
+    <!-- <script>
+        const fruit = "Welcome";
+        var vegetable = "WU";
+        alert("You are " + fruit + " to " + vegetable);
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+</body>
+</html>
